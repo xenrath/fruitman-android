@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Register"
+                    android:textColor="@color/color3"
+                    android:textSize="36sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Daftar terlebih dahulu"
+                    android:textSize="14sp"
+                    android:textColor="@color/color3"
+                    android:letterSpacing="0.05"
+                    android:alpha="0.5"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Nama"
+                    android:textColor="@color/color3"
+                    android:textSize="18sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edt_txt"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/person"
+                        />
+
+                    <View
+                        android:id="@+id/v_line1"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_name"
+                        android:layout_marginStart="17dp"
+                        android:background="@color/color3"
+                        android:alpha="0.5"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/v_line1"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="masukan nama"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Email"
+                    android:textColor="@color/color3"
+                    android:textSize="18sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edt_txt"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/lock"
+                        />
+
+                    <View
+                        android:id="@+id/v_line2"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_email"
+                        android:layout_marginStart="17dp"
+                        android:background="@color/color3"
+                        android:alpha="0.5"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/v_line2"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="masukan email"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="No. Telp"
+                    android:textColor="@color/color3"
+                    android:textSize="18sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edt_txt"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_telp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/phone"
+                        />
+
+                    <View
+                        android:id="@+id/v_line3"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_telp"
+                        android:layout_marginStart="17dp"
+                        android:background="@color/color3"
+                        android:alpha="0.5"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/v_line3"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="masukan nomor telpon"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Password"
+                    android:textColor="@color/color3"
+                    android:textSize="18sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edt_txt"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_lock1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/lock"
+                        />
+
+                    <View
+                        android:id="@+id/v_line4"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_lock1"
+                        android:layout_marginStart="17dp"
+                        android:background="@color/color3"
+                        android:alpha="0.5"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/v_line4"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="masukan password"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Konfirmasi Password"
+                    android:textColor="@color/color3"
+                    android:textSize="18sp"
+                    android:letterSpacing="0.05"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_edt_txt"
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_lock2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/lock"
+                        />
+
+                    <View
+                        android:id="@+id/v_line5"
+                        android:layout_width="1dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/iv_lock2"
+                        android:layout_marginStart="17dp"
+                        android:background="@color/color3"
+                        android:alpha="0.5"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/v_line5"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="10dp"
+                        android:hint="masukan ulang password"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg_btn"
+                android:fontFamily="@font/poppins"
+                android:letterSpacing="0.05"
+                android:text="Daftar"
+                android:textColor="@color/color1"
+                android:textSize="14sp"
+                app:backgroundTint="@color/color4"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Sudah punya akun? "
+                    android:textSize="14sp"
+                    android:textColor="@color/color3"
+                    android:textAlignment="center"
+                    android:letterSpacing="0.05"
+                    android:alpha="0.5"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Login"
+                    android:textSize="14sp"
+                    android:textColor="@color/color3"
+                    android:textAlignment="center"
+                    android:letterSpacing="0.05"
+                    android:alpha="0.5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

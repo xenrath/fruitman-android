@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Login"
+                android:textColor="@color/color3"
+                android:textSize="36sp"
+                android:letterSpacing="0.05"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Masuk untuk melanjutkan"
+                android:textSize="14sp"
+                android:textColor="@color/color3"
+                android:letterSpacing="0.05"
+                android:alpha="0.5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Login"
+                android:textColor="@color/color3"
+                android:textSize="18sp"
+                android:letterSpacing="0.05"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edt_txt"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/email"
+                    />
+
+                <View
+                    android:id="@+id/v_line1"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_email"
+                    android:layout_marginStart="17dp"
+                    android:background="@color/color3"
+                    android:alpha="0.5"/>
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/v_line1"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="masukan nama"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Password"
+                android:textColor="@color/color3"
+                android:textSize="18sp"
+                android:letterSpacing="0.05"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edt_txt"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/lock"
+                    />
+
+                <View
+                    android:id="@+id/v_line2"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_lock"
+                    android:layout_marginStart="17dp"
+                    android:background="@color/color3"
+                    android:alpha="0.5"/>
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/v_line2"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="masukan password"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_btn"
+            android:fontFamily="@font/poppins"
+            android:letterSpacing="0.05"
+            android:text="Masuk"
+            android:textColor="@color/color1"
+            android:textSize="14sp"
+            app:backgroundTint="@color/color4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lupa Password?"
+            android:textSize="14sp"
+            android:textColor="@color/color3"
+            android:textAlignment="center"
+            android:letterSpacing="0.05"
+            android:alpha="0.5"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Belum punya akun? "
+                android:textSize="14sp"
+                android:textColor="@color/color3"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:alpha="0.5"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Daftar"
+                android:textSize="14sp"
+                android:textColor="@color/color3"
+                android:textAlignment="center"
+                android:letterSpacing="0.05"
+                android:alpha="0.5"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
